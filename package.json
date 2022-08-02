@@ -1,27 +1,49 @@
 {
-  "name": "erent-fe",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@ant-design/icons": "4.7.0",
-    "@reduxjs/toolkit": "1.8.3",
-    "antd": "4.22.3",
-    "next": "12.2.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-redux": "8.0.2",
-    "styled-components": "5.3.5"
-  },
-  "devDependencies": {
-    "babel-plugin-styled-components": "2.0.7",
-    "eslint": "8.21.0",
-    "eslint-config-next": "12.2.3",
-    "next-compose-plugins": "2.2.1"
-  }
+    "name": "erent-fe",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "prepare": "husky install",
+        "postinstall": "husky install",
+        "preinstall": "chmod a+x .husky/commit-msg",
+        "commit": "cz"
+    },
+    "dependencies": {
+        "@ant-design/icons": "4.7.0",
+        "@reduxjs/toolkit": "1.8.3",
+        "antd": "4.22.3",
+        "next": "12.2.3",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "react-redux": "8.0.2",
+        "styled-components": "5.3.5"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "17.0.3",
+        "@commitlint/config-conventional": "17.0.3",
+        "babel-plugin-styled-components": "2.0.7",
+        "commitizen": "4.2.5",
+        "cz-conventional-changelog": "3.3.0",
+        "eslint": "8.21.0",
+        "eslint-config-next": "12.2.3",
+        "husky": "8.0.1",
+        "lint-staged": "13.0.3",
+        "next-compose-plugins": "2.2.1",
+        "prettier": "2.7.1"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    },
+    "lint-staged": {
+        "*.{css,less,scss,html,json,jsx,js}": [
+            "prettier --write ."
+        ],
+        "*.js": "eslint --fix"
+    }
 }
