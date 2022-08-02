@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@components/*": ["components/*"],
+            "@components": ["components"],
+            "@public/*": ["public/*"],
+            "@public": ["public"],
+            "@definitions/*": ["definitions/*"],
+            "@definitions": ["definitions"],
+            "@interfaces/*": ["interfaces/*"],
+            "@interfaces": ["interfaces"],
+            "@styles/*": ["styles/*"],
+            "@styles": ["styles"],
+            "@redux/*": ["redux/*"],
+            "@redux": ["redux"],
+            "@test/*": ["test/*"],
+            "@test": ["test"]
+        }
+    }
+}

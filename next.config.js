@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-}
+    reactStrictMode: false,
+    swcMinify: true,
+};
+const withPlugins = require("next-compose-plugins");
 
-module.exports = nextConfig
+module.exports = withPlugins([], nextConfig);
