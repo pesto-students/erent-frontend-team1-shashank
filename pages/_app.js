@@ -1,6 +1,6 @@
 import { StyledThemeProvider } from "@definitions/styled-components";
 
-import "antd/dist/antd.css";
+require("../styles/variables.less");
 import GlobalStyle from "@styles/globalStyles";
 
 function MyApp({ Component, pageProps }) {

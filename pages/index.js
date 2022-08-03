@@ -1,9 +1,9 @@
-import { Button } from "antd";
+import Login from "@components/Login";
 
 export default function Home() {
     return (
         <div>
-            <Button>Hello World</Button>
+            <Login />
         </div>
     );
 }
