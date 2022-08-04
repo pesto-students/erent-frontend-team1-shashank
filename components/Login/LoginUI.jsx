@@ -1,4 +1,4 @@
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
 import { MdOutlineAlternateEmail, MdFacebook } from "react-icons/md";
 import { BsShieldLockFill } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
@@ -16,10 +16,9 @@ const LoginUI = () => {
     return (
         <LoginUIContainer>
             <ImageContainer>
-                <Image
-                    src={loginVector}
+                <img
+                    src="https://res.cloudinary.com/ruhanrk/image/upload/v1659618956/eRent/login_t5pidj.jpg"
                     alt="login vector"
-                    layout="responsive"
                 />
             </ImageContainer>
             <h1 className="title">Login</h1>
