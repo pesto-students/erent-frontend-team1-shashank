@@ -6,7 +6,7 @@ export const CustomModal = styled(Modal)`
         width: 98%;
         margin: auto;
 
-        @media (min-width: ${(props) => props.theme.devices.mobileM}) {
+        @media (min-width: ${(props) => props.theme.devices.mobileL}) {
             width: 380px;
         }
     }
