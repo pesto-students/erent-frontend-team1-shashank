@@ -14,6 +14,8 @@
             "@styles": ["styles"],
             "@redux/*": ["redux/*"],
             "@redux": ["redux"],
+            "@assets/*": ["assets/*"],
+            "@assets": ["assets"],
             "@lib/*": ["lib/*"],
             "@lib": ["lib"],
             "@test/*": ["test/*"],

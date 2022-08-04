@@ -1,6 +1,7 @@
 import common from "./common";
 
 const light = {
+    ...common,
     colors: {
         ...common.colors,
         toggleBorder: "#ABB7C4",
