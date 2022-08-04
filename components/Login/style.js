@@ -16,6 +16,11 @@ export const ImageContainer = styled.div`
     height: 100%;
     width: 80%;
     margin: auto;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
 `;
 
 export const LoginUIContainer = styled.div`
