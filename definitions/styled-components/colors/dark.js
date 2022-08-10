@@ -1,8 +1,9 @@
 import common from "./common";
 
 const light = {
+    ...common,
     colors: {
-        ...common.colors,
+        ...common,
         toggleBorder: "#556678",
         gradient: "linear-gradient(#091236, #1E215D)",
         background: "#20232A",

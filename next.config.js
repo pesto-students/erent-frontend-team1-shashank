@@ -4,9 +4,11 @@ const withAntdLess = require("next-plugin-antd-less");
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     reactStrictMode: false,
-    swcMinify: true,
+    swcMinify: false,
+    images: {
+        domains: ["res.cloudinary.com"],
+    },
 };
-
 module.exports = withPlugins(
     [
         [

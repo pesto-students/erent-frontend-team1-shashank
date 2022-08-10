@@ -3,6 +3,7 @@ import { ThemeProvider } from "styled-components";
 
 import light from "./colors/light";
 import dark from "./colors/dark";
+import devices from "./sized/devices";
 
 export const ThemeContext = createContext({
     theme: "light",
@@ -23,11 +24,13 @@ export const StyledThemeProvider = ({ children }) => {
         [toggle, theme],
     );
 
+    const styledTheme = theme === "light" ? light : dark;
+
+    styledTheme.devices = devices;
+
     return (
         <ThemeContext.Provider value={values}>
-            <ThemeProvider theme={theme === "light" ? light : dark}>
-                {children}
-            </ThemeProvider>
+            <ThemeProvider theme={styledTheme}>{children}</ThemeProvider>
         </ThemeContext.Provider>
     );
 };
