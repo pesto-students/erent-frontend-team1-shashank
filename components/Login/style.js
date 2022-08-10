@@ -1,4 +1,4 @@
-import { Modal } from "antd";
+import { Modal, Button, Menu } from "antd";
 import styled from "styled-components";
 
 export const CustomModal = styled(Modal)`
@@ -60,7 +60,7 @@ export const LoginUIContainer = styled.div`
             border-radius: 10px;
             padding: 0.3rem;
             height: 40px;
-            width: 80px;
+            width: 100px;
 
             display: flex;
             justify-content: center;
@@ -71,6 +71,31 @@ export const LoginUIContainer = styled.div`
             &:hover {
                 background: rgba(0, 0, 0, 0.1);
             }
+        }
+    }
+`;
+
+export const LoginButton = styled(Button)`
+    color: ${(props) => props.theme.colors.primary};
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        color: ${(props) => props.theme.colors.white};
+        background-color: ${(props) => props.theme.colors.primary};
+    }
+`;
+
+export const CustomMenu = styled(Menu)`
+    padding: 1rem 0;
+    padding-bottom: 0.2rem;
+    .ant-dropdown-menu-item:not(:last-child) {
+        padding: 0.4rem 1rem;
+
+        &:hover {
+            background: ${(props) => props.theme.colors.primary};
+            color: ${(props) => props.theme.colors.white};
         }
     }
 `;
