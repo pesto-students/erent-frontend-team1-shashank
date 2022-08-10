@@ -16,8 +16,16 @@
             "@redux": ["redux"],
             "@assets/*": ["assets/*"],
             "@assets": ["assets"],
+            "@services/*": ["services/*"],
+            "@services": ["services"],
+            "@layouts/*": ["layouts/*"],
+            "@layouts": ["layouts"],
             "@lib/*": ["lib/*"],
             "@lib": ["lib"],
+            "@hooks/*": ["hooks/*"],
+            "@hooks": ["hooks"],
+            "@context/*": ["context/*"],
+            "@context": ["context"],
             "@test/*": ["test/*"],
             "@test": ["test"]
         }
