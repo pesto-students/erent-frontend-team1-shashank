@@ -32,6 +32,7 @@ const Login = () => {
                         shape="circle"
                         icon={<UserIcon size="1.3rem" />}
                         onClick={handleToggleModal}
+                        className="loginbtn"
                     />
                 </Tooltip>
             )}
