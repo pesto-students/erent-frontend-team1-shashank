@@ -42,9 +42,19 @@ class CustomDocument extends Document {
                         href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
                         rel="stylesheet"
                     />
+                    <link
+                        rel="stylesheet"
+                        type="text/css"
+                        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+                    />
+                    <script
+                        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+                        crossOrigin="anonymous"
+                        async
+                    ></script>
                 </Head>
                 <body>
-                    <Main />
+                    <Main style={{ overflowY: "scroll" }} />
                     <NextScript />
                 </body>
             </Html>
