@@ -37,7 +37,8 @@ export const MenuItem = styled.li``;
 
 export const CustomContent = styled(Content)`
     margin: 2rem 0;
-    padding: 0 50px;
+    padding: 0 10px;
+    overflow-y: scroll;
 `;
 
 export const CustomFooter = styled(Footer)`
